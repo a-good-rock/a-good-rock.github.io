@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "styles\style.css">
+  <link rel="icon" href="images\awLogo.png">
+
+  <meta charset = "utf-8">
+
+  <title>Alex Wrightstone</title>
+</head>
+
+<body>
+  <article>
+  <section id="desktopNav">
+    <nav class="navbar navbar-expand-sm bg-primary bg-dark fixed-top">
+    <ul class="navbar-nav nav-justified">
+       <li class="nav-brand">
+        <a href="https://github.com/a-good-rock" id="border" class="nav-link name"></a>
+      </li>
+      <li class="nav-brand">
+        <div id="logo" class="nav-link">AW</div>
+      </li>
+
+      <li class="nav-brand">
+        <div id="alexW" class="nav-link name"> Alex Wrightstone </div>
+      </li>
+      <li class="nav-item">
+        <a href="#aboutMe" class="nav-link ">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a href="#myWork" class="nav-link">My Work</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contactMe" class="nav-link">Contact Me</a>
+      </li>
+
+
+    </ul>
+  </nav>
+  </section>
+
+  <section id="mobileNav">
+    <nav class="navbar navbar-expand-sm bg-primary bg-dark fixed-top">
+      <a class="navbar-brand" href="https://github.com/a-good-rock" id="border"></a>
+      <a class="navbar-brand" href="https://github.com/a-good-rock" id="logo">AW</a>
+      <div class="navbar-brand" id="alexW">Alex Wrightstone</div>
+      <button class="navbar-toggler navbar-toggler-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#myWork">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactMe">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="splash-text">Hey, I'm Alex. <br> Welcome to my portfolio.</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section id="aboutMe">
+  <h1 align="center" >About Me</h1>
+
+      <p class="bio lead">
+        I'm a passionate junior developer located in Boone, North Carolina. I have experience in Java, SQL, HTML, CSS and Python.  I can currently be found learning the ins-and-outs of JSP, Java SpringBoot and being a role-model for my cats.  <br> <br>
+        I love solving problems, and I'm always eager to learn something new.  I'm currently looking for a junior position that will allow me to gain experience with design architecture and working with databases.
+      </p>
+    </section>
+
+
+
+      <section id="myWork">
+
+        <h1 align="center" id="projects">My Work </h1>
+
+        <div tabindex="1" class="workLinks">Python Blackjack</div>
+        <a href="https://github.com/a-good-rock/Python-Blackjack">
+          <div class="projectImageContainer">
+            <img src="images/pythonIcon.png" class="img-fluid projectImage">
+            <img src="images/blackjackIcon.png" class="img-fluid projectImage">
+          </div>
+        </a>
+
+
+        <p class="lead">
+        My take on Blackjack, built in Python and run on the command-line.  For this version, I used basic Object-Oriented principles to divide responsibilities between a Player class, Dealer Class and Deck class. This project makes use of "if-then" statements, while-loops,  looped-exception-handling, and allows up to 4 players.
+      </p>
+      <hr>
+
+      <div class="workLinks" tabindex="2">Java Blackjack</div>
+        <a href="https://github.com/a-good-rock/Java-Blackjack">
+          <div class="projectImageContainer">
+            <img src="images/javaIcon.png" class="projectImage">
+            <img src="images/blackjackIcon.png" class="projectImage">
+          </div>
+        </a>
+
+        <p class="lead">
+          An improved version of my Python Blackjack game, written in Java and making use of design patterns, abstract classes and interfaces in order to allow for flexibility and additional class creation in the future without code reuse.  For example, I used the design principle of programming to an interface to allow <code>GameLogic</code> class to accept any class that implements <code>Deck</code> in its constructor, which would allow me to create a brand new <code>Deck</code>object with totally different cards, should the need arise, without needing to touch <code>GameLogic</code>'s code itself.
+        </p>
+        <p class="lead">
+          Also worth mentioning, abstract class <code>Player</code> uses the Template Pattern to leave <code>makeTurnChoice()</code> abstract, requiring subclasses <code>DealerPlayer</code>, <code>HumanPlayer</code> and any future subclasses to define <code>makeTurnChoice()</code>'s behavior specific to their purpose, while still allowing <code>Player</code> subclasses to to share the majority of their code, saving me time and effort.
+        </p>
+        <hr>
+
+        <div class="workLinks" tabindex="3">Stanford Lagunitas SQL Answers</div>
+        <a href="https://github.com/a-good-rock/Stanford-Lagunita-SQL-Exercises-and-Answers">
+          <div class="projectImageContainer">
+            <img src="images/sqlIcon.png" class="projectImage">
+          </div>
+        </a>
+
+        <p class="lead">
+        My answers to Stanford Lagunita's DB5 SQL course and Stanford's DB11 Constraints and Triggers course. Throughout these exercises I use subqueries, aggregate functions, trigger creation, relation-modifying statements, and joins (natural, cross, inner and outer) to solve these problems.
+      </p>
+        <hr>
+
+        <div class="workLinks" tabindex="4">BeatBox MVC Redesign</div>
+        <a href="https://github.com/a-good-rock/Beat-Box">
+          <div class="projectImageContainer">
+            <img src="images/javaIcon.png" class="projectImage">
+            <img src="images/beatboxIcon.jpg" class="projectImage">
+          </div>
+        </a>
+
+        <p class="lead">
+          My redesign of the Beat-Box guided project from Head-First Java.  The original design for this project included all behavior and attributes in one <code>BeatBox</code> class, whereas my redesign follows Model-View-Controller architecture.   My redesign also uses the Observer Pattern to allow <code>BeatView</code> to notify <code>BeatController</code> (which also implements a <code>BeatObserver</code> interface) when the GUI has been interacted with.
+        </p>
+    </section>
+
+    <br>
+    <section id="contactMe" >
+    <h1 align="center"> I'd love to hear from you.  Let's get in touch. </h1>
+
+
+    <a href="mailto:avw4664@gmail.com">
+      <img src="images\emailDarkIcon.png" id="darkEmail">
+      <img src="images\emailWhiteIcon.png" class ="whiteIcon" id="whiteEmail">
+    </a>
+
+    <a href="https://github.com/a-good-rock">
+      <img src="images\githubDarkIcon.png" id="darkGithub">
+      <img src="images\githubWhiteIcon.png" class="whiteIcon" id="whiteGithub">
+    </a>
+
+    <a href="https://www.instagram.com/alex_right_rock/">
+      <img src="images\instagramDarkIcon.png" id="darkInstagram">
+      <img src="images\instagramWhiteIcon.png" class="whiteIcon" id="whiteInstagram">
+    </a>
+    </section>
+
+    <footer>Copyright © Alex Wrightstone 2019</footer>
+
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
