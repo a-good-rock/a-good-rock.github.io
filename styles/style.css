@@ -150,15 +150,15 @@ p {
 
 #border {
   border: solid;
-  width: 1.7em;
-  height:1.5em;
+  width: 5vw;
+  height:4.5vw;
   z-index: 50;
   color:white;
   position:absolute;
   transition:1s;
 }
 #logo {
-  font-size: x-large;
+
   font-family: Roboto, Helvetica;
   text-decoration: none;
   z-index: 1;
@@ -259,6 +259,10 @@ transition: all .7s ease;
     position:absolute;
     top: 15px;
     left: 12px;
+  }
+
+  #logo {
+    font-size: x-large;
   }
 
   h1 {
