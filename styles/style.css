@@ -1,3 +1,314 @@
+
+html {
+  scroll-behavior: smooth !important;
+  overflow-x:hidden;
+}
+
+* {
+  -webkit-overflow-scrolling:touch;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav {
+  width:100%;
+}
+
+
+.nav-link {
+  color:white;
+  font-size: 2.5vw;
+}
+#menu {
+  background-color: #5fd7af;
+  color:white;
+  text-align:center;
+  width:100%;
+}
+
+li {
+  color:white;
+}
+
+#alexW {
+  font-family: Roboto, Helvetica;
+  font-size: 2.5;
+  color:white;
+}
+
+footer {
+  background-color: #343a40;
+  color:white;
+  text-align:center;
+  padding: 20px;
+  font-family: Roboto, Helvetica;
+  font-size:x-small;
+}
+
+
+h1 {
+  font: small-caps;
+  font-family: Roboto Slab, serif, Helvetica;
+  color: #005f87;
+  font-size: xx-large;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+#mobileNav {
+  display:none;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(../images/NCMountainsPBClose.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.splash-text {
+  color:white;
+  font-family: Roboto, serif, Helvetica;
+  font-size: 5vw;
+}
+#aboutMe {
+  color:#005f87;
+}
+
+#aboutMe, #myWork {
+  padding: 15px 23vw 50px 23vw;
+}
+
+
+
+
+.projectImageContainer {
+  display:block;
+  height:auto;
+  background-color: rgba(0, 85, 135);
+  width:100%;
+  text-align:center;
+  z-index:5;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  margin-bottom:20px;
+}
+
+.projectImageContainer:hover {
+  opacity:.7;
+  background-color:white;
+}
+
+
+
+.projectImage {
+  display:inline-block;
+  float:center;
+  margin: auto;
+  width:7;
+  height:auto;
+  max-height:100%;
+}
+
+hr {
+  opacity: 1;
+  margin: 5vw auto 5vw auto;
+}
+
+#myWork {
+  background-color: #005f87;
+}
+
+#myWork p, #myWork h1 {
+  color: white;
+}
+
+
+.workLinks {
+  font-family: Roboto, Helvetica;
+  font-size: x-large;
+  color:white;
+  margin-bottom:20px;
+  text-align:left;
+}
+
+
+
+p {
+  font-size:large;
+  font-family: Roboto, Helvetica;
+  line-height:2;
+}
+
+#border {
+  border: solid;
+  width: 1.7em;
+  height:1.5em;
+  z-index: 50;
+  color:white;
+  position:absolute;
+  transition:1s;
+}
+#logo {
+  font-size: x-large;
+  font-family: Roboto, Helvetica;
+  text-decoration: none;
+  z-index: 1;
+  color:white;
+}
+
+#border:hover {
+  transform: rotate(180deg);
+}
+
+#contactMe {
+  position:relative;
+  margin-bottom:250px;
+}
+
+
+#contactMe a {
+  text-decoration:none;
+  margin-top:0px;
+}
+
+
+.whiteIcon {
+  position:absolute;
+  opacity:0;
+  -webkit-transition: all .7s ease;
+ -moz-transition: all .7s ease;
+ -ms-transition: all .7s ease;
+-o-transition: all .7s ease;
+transition: all .7s ease;
+  width: 8vw;
+  height:auto;
+}
+
+.whiteIcon:hover {
+  opacity:1;
+}
+
+
+#whiteEmail {
+  left: 30vw;
+}
+
+#darkEmail {
+  position:absolute;
+  left: 30vw;
+  width:8vw;
+  height:auto;
+}
+
+#whiteGithub {
+  left: 45vw;
+}
+
+#darkGithub {
+  position: absolute;
+  left: 45vw;
+  width:8vw;
+  height:auto;
+}
+
+#darkInstagram {
+  position:absolute;
+  left: 60vw;
+  width:8vw;
+  height:auto;
+}
+
+#whiteInstagram {
+  left: 60vw;
+}
+
+
+@media (max-width: 978px) {
+
+  #aboutMe, #myWork {
+    padding: 15px 5vw 15px 5vw;
+    margin:0;
+  }
+
+  #desktopNav {
+    display:none;
+  }
+
+  #mobileNav {
+    display:block;
+  }
+
+  .navbar, .fixed-top{
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+  }
+
+  #border {
+    width: 45px !important;
+    height: 35px !important;
+    position:absolute;
+    top: 15px;
+    left: 12px;
+  }
+
+  h1 {
+    margin: 100px 0px 40px 0px;
+  }
+
+  .splash-text {
+    margin-left:0px !important;
+  }
+
+  .nav-link {
+    font-size:.8rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+  .workLinks {
+    margin-bottom: 5px;
+
+  }
+
+  #darkEmail, #darkGithub, #darkInstagram, .whiteIcon {
+    width:60px !important;
+  }
+
+  #darkEmail, #whiteEmail {
+    left: 20vw !important;
+  }
+
+  #darkGithub, #whiteGithub {
+    left: 43vw !important;
+  }
+
+  #darkInstagram, #whiteInstagram {
+    left: 66vw !important;
+  }
+
+  .splash-text {
+    font-size: 10vw;
+    text-align:left;
+    margin-top: 50vw;
+  }
+
+  #contactMe {
+    margin-bottom: 200px !important;
+  }
+}
+
 html {
   scroll-behavior: smooth !important;
   overflow-x:hidden;
